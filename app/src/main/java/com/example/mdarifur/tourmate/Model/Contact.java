@@ -9,6 +9,8 @@ public class Contact {
     private String password;
     private String photo;
     private String phoneNub;
+    private String emailId;
+
 
     public int getId() {
         return id;
@@ -57,11 +59,6 @@ public class Contact {
     public void setEmailId(String emailId) {
         this.emailId = emailId;
     }
-
-    private String emailId;
-
-
-
 
 
     public Contact(int id, String name, String password, String photo, String phoneNub, String emailId) {
