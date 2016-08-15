@@ -123,6 +123,7 @@
 
                 <ImageView
                     android:layout_width="100sp"
+                    android:id="@+id/cameraIV"
                     android:onClick="ImageCapture"
                     android:layout_height="70sp"
                     android:src="@drawable/camera"
