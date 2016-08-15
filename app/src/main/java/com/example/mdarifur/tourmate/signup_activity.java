@@ -11,7 +11,7 @@ import android.widget.Toast;
 
 import com.example.mdarifur.tourmate.FileOperation.FileSystem;
 
-public class Signup_activity extends AppCompatActivity {
+public class signup_activity extends AppCompatActivity {
     private FileSystem fileSystem;
     static final int REQUEST_IMAGE_CAPTURE = 1;
     ImageView cameraIV;
@@ -43,7 +43,7 @@ public class Signup_activity extends AppCompatActivity {
     }
     public void SaveData(View view) {
         Bitmap b = fileSystem.loadImageFromStorage(imageName);
-        Toast.makeText(Signup_activity.this, imageName, Toast.LENGTH_SHORT).show();
+        Toast.makeText(signup_activity.this, imageName, Toast.LENGTH_SHORT).show();
         cameraIV.setImageBitmap(b);
     }
 }
