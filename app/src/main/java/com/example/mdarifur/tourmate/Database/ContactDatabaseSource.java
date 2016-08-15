@@ -28,11 +28,8 @@ public class ContactDatabaseSource {
     public void close(){
         databaseHelper.close();
     }
-
-
     public boolean addContact(Contact contact){
         this.open();
-
 
         ContentValues contentValues=new ContentValues();
         contentValues.put(DatabaseHelper.clint_name,contact.getName());
@@ -40,9 +37,6 @@ public class ContactDatabaseSource {
         contentValues.put(DatabaseHelper.clint_photo,contact.getPhoto());
         contentValues.put(DatabaseHelper.clint_phoneNub,contact.getPhoneNub());
         contentValues.put(DatabaseHelper.clint_emailId,contact.getEmailId());
-
-
-
 
         long inserted=database.insert(DatabaseHelper.TABLE_CONTACT,null,contentValues);
         this.close();
